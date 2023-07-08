@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+*{
+    padding:0;
+    margin:0
+    
+}
+
+body {
+    font-size: calc(1em + 10px);
+    color:white;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Bellefair", serifs;
+
+    
+   
+
+}
+p{
+  font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320)));
+}
+.title{
+  display: flex;
+  gap: .7em;
+  align-items: center;
+  h3{
+    color: gray;
+  }
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+.link{
+    margin-left: 18px;
+    color: inherit;
+    text-decoration:none;
+    transition: 300ms;
+   
+    &.active {
+      border-bottom: 1px white solid;
+      padding-bottom: 1em;
+    }
+}
+
+.linkitem {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -1em;
+      right: 90%;
+      left: 10%;
+      width: 0;
+      height: 1px;
+      background-color: white;
+      transition: width 350ms, right 350ms;
+    }
+    &:hover::after {
+      width: 100%;
+      right: 0;
+    }
+    
+  }
+  
