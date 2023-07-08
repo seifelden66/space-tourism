@@ -43,7 +43,7 @@ const onTechChange = (tech) => {
      
       .top {
         margin-top: 1em;
-        
+        z-index: 0;
       }
       .btm {
         display: flex;
@@ -88,17 +88,25 @@ const onTechChange = (tech) => {
 }
 @media (max-width:992px) {
   .whole{
+    z-index: -99;
     background-image: url('../assets//technology/background-technology-mobile.jpg');
     .container{
       display: flex;
-      flex-direction: column;
+      flex-direction: column-reverse;
       align-items: center;
       text-align: center;
       .left{
+        .top{
+          position: absolute;
+          top: 2em;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 0;
+        }
         .btm{
           display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
+          flex-direction: column-reverse;
+          align-items: center;
         ol{
           display: flex;
           align-items: center;

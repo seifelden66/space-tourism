@@ -2,6 +2,7 @@
 .contain
     .nav    
         Nav/
+    .side
         Side/
     .slot
         slot/
@@ -18,6 +19,9 @@ position: relative;
     top: 5vh;
     position: fixed;
     width: 100%;
+}
+.side{
+    z-index: 999;
 }
 
 }

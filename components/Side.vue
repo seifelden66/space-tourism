@@ -33,16 +33,16 @@ div
         animation-duration: 600ms;
       }
     .side {
-        z-index: 999;
+        position: absolute;
       font-size: 26px;
       background: #161c28;
       color: #A6A6A6;
-      position: fixed;
+      
       top: 0;
       right: 0;
       bottom: 0;
       width: 270px;
-
+      z-index: 999;
       padding: 1em;
       text-align: left;
       button{
